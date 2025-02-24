@@ -34,13 +34,39 @@ body {
 
 h2 {
     font-size: 2rem; /* Adjust font size as needed */
-    margin: 0; /* Removes default margin */
+    margin: 0 0 10px 0; /* Adds space below the heading */
     color: white;
+}
+
+.input-field {
+    width: 80%; /* Adjust width as needed */
+    max-width: 300px; /* Limits the maximum width */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333;
+    text-align: center;
+}
+
+.input-field::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007BFF; /* Highlight border on focus */
+    background: rgba(255, 255, 255, 1); /* Solid white background on focus */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     h2 {
         font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .input-field {
+        width: 90%; /* Wider input field for mobile */
     }
 }
