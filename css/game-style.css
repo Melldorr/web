@@ -27,46 +27,26 @@ body {
     gap: 20px; /* Space between sections */
 }
 
-.section {
-    width: 100%; /* Takes full width of the container */
-    text-align: center;
+.section-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: block; /* Ensures the link takes the full width of the image */
 }
 
-h2 {
-    font-size: 2rem; /* Adjust font size as needed */
-    margin: 0 0 10px 0; /* Adds space below the heading */
-    color: white;
+.section-link:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
 
-.input-field {
-    width: 80%; /* Adjust width as needed */
-    max-width: 300px; /* Limits the maximum width */
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    color: #333;
-    text-align: center;
-}
-
-.input-field::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* Placeholder text color */
-}
-
-.input-field:focus {
-    outline: none;
-    border-color: #007BFF; /* Highlight border on focus */
-    background: rgba(255, 255, 255, 1); /* Solid white background on focus */
+.section-image {
+    width: 80%; /* Adjust size to fit within the container */
+    max-width: 300px; /* Limits the maximum size of the images */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
-    }
-
-    .input-field {
-        width: 90%; /* Wider input field for mobile */
+    .section-image {
+        width: 50%; /* Half the size for mobile screens */
+        max-width: 150px; /* Limits the maximum size of the images */
     }
 }
