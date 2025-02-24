@@ -63,6 +63,7 @@ h1 {
     }
 
     .section-image {
-        width: 90%; /* Larger images for smaller screens */
+        width: 50%; /* Half the size for mobile screens */
+        max-width: 150px; /* Limits the maximum size of the images */
     }
 }
