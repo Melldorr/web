@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', serif;
+    background-image: url('../images/game-login.jpg'); /* Background wallpaper */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-image {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.enter-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ensure the image doesn't block input */
+}
+
+.input-field {
+    width: 180px; /* Adjust size to fit inside enter-id.png */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
