@@ -39,14 +39,32 @@ body {
 
 .section-image {
     width: 80%; /* Adjust size to fit within the container */
-    max-width: 300px; /* Limits the maximum size of the images */
+    max-width: 600px; /* Match the size of login screen images */
     height: auto; /* Maintains aspect ratio */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .section-image {
-        width: 50%; /* Half the size for mobile screens */
-        max-width: 150px; /* Limits the maximum size of the images */
+        width: 60%; /* Slightly larger for mobile */
+        max-width: 300px; /* Match the size of login screen images for mobile */
     }
+}
+
+.fullscreen-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fullscreen-btn:hover {
+    background-color: #0056b3;
 }

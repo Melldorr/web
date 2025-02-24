@@ -1,69 +1,13 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Vollkorn', serif;
-    background-image: url('../images/welcome-bg.jpg'); /* Background wallpaper */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px; /* Adds space around the edges */
-    box-sizing: border-box; /* Ensures padding is included in the height */
-}
-
-.welcome-container {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 90%; /* Ensures the container doesn't get too wide */
-    width: 100%; /* Takes full width of the screen */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Space between title and images */
-}
-
-h1 {
-    font-size: 2.5rem; /* Adjusted font size for better fit */
-    margin: 0; /* Removes default margin */
-}
-
-.sections {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between images */
-    width: 100%; /* Takes full width of the container */
-    align-items: center; /* Centers the images horizontally */
-}
-
-.section-link {
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    display: block; /* Ensures the link takes the full width of the image */
-}
-
-.section-link:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
-}
-
 .section-image {
     width: 80%; /* Adjust size to fit within the container */
-    max-width: 300px; /* Limits the maximum size of the images */
+    max-width: 600px; /* Double the size (from 300px to 600px) */
     height: auto; /* Maintains aspect ratio */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
-
     .section-image {
-        width: 50%; /* Half the size for mobile screens */
-        max-width: 150px; /* Limits the maximum size of the images */
+        width: 60%; /* Slightly larger for mobile */
+        max-width: 300px; /* Double the size for mobile (from 150px to 300px) */
     }
 }

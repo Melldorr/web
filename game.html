@@ -10,20 +10,36 @@
 </head>
 <body>
     <div class="game-container">
+        <!-- Full-Screen Button -->
+        <button id="fullscreen-btn" class="fullscreen-btn">Full Screen</button>
+
         <!-- Game ID Section -->
         <a href="game/gamer.html" class="section-link">
-            <img src="game/game-id.png" alt="Game ID" class="section-image">
+            <img src="game/gamer-enter.png" alt="Game ID" class="section-image">
         </a>
 
         <!-- Audience Section -->
         <a href="game/audience.html" class="section-link">
-            <img src="game/audience-id.png" alt="Audience" class="section-image">
+            <img src="game/audience-enter.png" alt="Audience" class="section-image">
         </a>
 
         <!-- Teacher Section -->
         <a href="game/teacher.html" class="section-link">
-            <img src="game/teacher-id.png" alt="Teacher" class="section-image">
+            <img src="game/teacher-enter.png" alt="Teacher" class="section-image">
         </a>
     </div>
+
+    <script>
+        // Full-Screen Toggle
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+        fullscreenBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
 </body>
 </html>
